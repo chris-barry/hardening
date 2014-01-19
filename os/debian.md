@@ -18,9 +18,9 @@
 * Check sudoers file
 	* `visudo`
 * Install program from repository.
-	* `apt-get install [program name]
+	* `apt-get install [program name]`
 * Remove program from repository.
-	* `apt-get remove [program name]
+	* `apt-get remove [program name]`
 
 ## TODO
 * How to configure firewall.
