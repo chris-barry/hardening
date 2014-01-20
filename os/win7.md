@@ -3,7 +3,7 @@
   * From the Start menu, select Control Panel. If you are not already in Category View, in the upper left, click Category   View. Then, click User Accounts and Family Safety.
   * Under "User Accounts", click Change your Windows password. If prompted, click Continue.
   * Under "Make changes to your user account", click Set a password.
-  *In the "New password" and "Confirm new password" fields, enter the password. Click OK twice.
+  * In the "New password" and "Confirm new password" fields, enter the password. Click OK twice.
 * Check running services.
   * From a command prompt: Start | Run (type) cmd (click Ok)
   * (type) tasklist /svc (press Enter) 
@@ -24,5 +24,3 @@
 * Check what runs at startup.
   * (press) `win -r` (type) `msconfig.msc`
   * (click) the Startup tab
-
-
