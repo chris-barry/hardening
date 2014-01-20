@@ -24,3 +24,31 @@
 * Check what runs at startup.
   * (press) `win -r` (type) `msconfig.msc`
   * (click) the Startup tab
+* Turn UAC(User Account Control) to the max.
+  * Control Panel\All Control Panel Items\User Accounts\Change User Account Control Settings Move slider to top
+* Set up Firewall Profile
+  * Control Panel | Network and Sharing Center
+  * Change network location to `Public`.
+* Use only Bare Essential Network protocols.
+  * Control Panel | Network and Sharing Center Local Area Connection | Properties button 
+  * Uncheckmark the following:
+    * Client for MS Networks
+    * File and Printer Sharing for Microsoft Networks (CAREFULL!!)
+    * QoS
+    * Link Layer Topology Discovery Mapper IO Driver
+    * Link Layer Topology Discovery Responder
+    * Internet protocol version 6
+  * Select 'Internet Protocol version 4 (TCP IPv4), click Properties, (click) Advanced,
+    * Click 'DNS' tab, uncheck 'register this connections address in DNS'
+    * Click 'WINS' tab, select 'Disable NETBIOS over TCP/IP'
+* Disable IPV6 Totally
+ * (press) `win -r` (type) ` regedit.exe`
+    * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters \ 
+    * Double-click DisabledComponents to change the DisabledComponents entry.
+* Disable unused tcpip6 Devices and NETBT
+  * Control Panel | Device Manager, View menu |Show Hidden Devices
+  * /Network, disable Wan Miniport IPv6
+  * /Network, disable Microsoft ISATAP adapter (IPv6 tunnel)
+  * /Network, disable Teredo Tunneling Pseudo Interface (IPv6 tunnel)
+  * /Non-Plug and Play Drivers /Remote Access IPv6 ARP Driver > Properties > Driver tab >: Change Startup Type from System to Disable
+  *  /Non-Plug and Play Drivers / NETBT > Properties > Driver tab > Stop it and change Type from 'System' to 'Disabled'. (disables NETBIOS totally. partially closes port 445)
