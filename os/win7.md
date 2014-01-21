@@ -6,7 +6,9 @@
   * In the "New password" and "Confirm new password" fields, enter the password. Click OK twice.
 * Check running services.
   * From a command prompt: Start | Run (type) cmd (click Ok)
-  * (type) tasklist /svc (press Enter) 
+  * `tasklist /svc` 
+  * or `wmic process list full`
+  * Or in the GUI: `services.msc`
 * To Remove any unneeded running Processes
   * Log on as Administrator
   * Start | Settings | Control Panel | Administrative Tools | Services
@@ -22,6 +24,8 @@
   * `net user "UserName" /delete`
   * In Windows Explorer, navigate to this user account's `C:\Users\(user-name)` profile folder (ex: Example-Standard), right click or press and hold on it, click on Delete, and approve. 
 * Check what runs at startup.
+  * `schtasks`
+  * `wmic startup list full`
   * (press) `win -r` (type) `msconfig.msc`
   * (click) the Startup tab
 * Turn UAC(User Account Control) to the max.
@@ -52,3 +56,10 @@
   * /Network, disable Teredo Tunneling Pseudo Interface (IPv6 tunnel)
   * /Non-Plug and Play Drivers /Remote Access IPv6 ARP Driver > Properties > Driver tab >: Change Startup Type from System to Disable
   *  /Non-Plug and Play Drivers / NETBT > Properties > Driver tab > Stop it and change Type from 'System' to 'Disabled'. (disables NETBIOS totally. partially closes port 445)
+
+* Logs
+  * GUI: `eventvrw.msc`
+
+TODO: 
+
+* Add more about wmic
