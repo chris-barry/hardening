@@ -8,9 +8,18 @@ Check if running legacy DFS or DFSR
   * Weep
   
 Install Updates
+* Get R2 installed
 * Specific Hotfixes: http://blogs.technet.com/b/instan/archive/2012/06/03/cheat-sheet-for-dfs-n-and-dfs-r-on-windows-2008-r2-and-windows-7.aspx
 
-Run Best Practice Analyzer
+Configure Namespaces
+* c:/ shouldn't be shared
+* TODO - IPS$ share?
+ 
+Check running services
+Check Scheduled Tasks
+Check permissions
+
+Run Best Practice Analyzer once R2 is installed
 * http://technet.microsoft.com/en-us/library/dd759260.aspx
 * http://technet.microsoft.com/en-us/library/dd759206.aspx
 
