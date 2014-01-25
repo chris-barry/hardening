@@ -34,32 +34,32 @@
 
 `openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout /etc/vsftpd/vsftpd.pem -out /etc/vsftpd/vsftpd.pem`
 
-anonymous_enable=NO
-local_enable=YES
-write_enable=YES
-local_umask=022
-dirmessage_enable=YES
-xferlog_enable=YES
-connect_from_port_20=YES
-xferlog_std_format=YES
-ftpd_banner=Welcome to blah FTP service.
-listen=YES
+* anonymous_enable=NO
+* local_enable=YES
+* write_enable=YES
+* local_umask=022
+* dirmessage_enable=YES
+* xferlog_enable=YES
+* connect_from_port_20=YES
+* xferlog_std_format=YES
+* ftpd_banner=Welcome to blah FTP service.
+* listen=YES
 
-pam_service_name=vsftpd
-userlist_enable=YES
-tcp_wrappers=YES
+* pam_service_name=vsftpd
+* userlist_enable=YES
+* tcp_wrappers=YES
 
-pasv_enable=YES
-pasv_promiscuous=YES
-pasv_min_port=6000
-pasv_max_port=7000
+* pasv_enable=YES
+* pasv_promiscuous=YES
+* pasv_min_port=6000
+* pasv_max_port=7000
 
-ssl_enable=YES
-allow_anon_ssl=NO
-force_local_logins_ssl=YES
-ssl_tlsv1=YES
-ssl_sslv2=YES
-ssl_sslv3=YES
-rsa_cert_file=/etc/vsftpd/vsftpd.pem
-rsa_private_key_file=/etc/vsftpd/vsftpd.pem
+* ssl_enable=YES
+* allow_anon_ssl=NO
+* force_local_logins_ssl=YES
+* ssl_tlsv1=YES
+* ssl_sslv2=YES
+* ssl_sslv3=YES
+* rsa_cert_file=/etc/vsftpd/vsftpd.pem
+* rsa_private_key_file=/etc/vsftpd/vsftpd.pem
 
